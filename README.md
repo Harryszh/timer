@@ -18,7 +18,7 @@ Optional
 Verwende SCSS für das Projekt
 Validation der Eingaben
 Abspielen eines Sounds, wenn der Timer abgelaufen ist
-Verwendung einer im Kreis mitlaufenden Linie
+chatgbt
 Timer als Analoge Uhr gestalten
 
 

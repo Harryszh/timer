@@ -5,9 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
+    
+ 
+
 </head>
-<body>
+<body style="background-color: yellow;">
+  
+ 
+  <div class="bild-rolex" style="background-color: yellow;">
+    <img src="Rolex.png" alt="Ein Beispielbild" width="200" height="300" >
+  </div>
+
+  <div class="clock">
+    <span style="--i:1"><b>1</b></span>
+    <span style="--i:2"><b>2</b></span>
+    <span style="--i:3"><b>3</b></span>
+    <span style="--i:4"><b>4</b></span>
+    <span style="--i:5"><b>5</b></span>
+    <span style="--i:6"><b>6</b></span>
+    <span style="--i:7"><b>7</b></span>
+    <span style="--i:8"><b>8</b></span>
+    <span style="--i:9"><b>9</b></span>
+    <span style="--i:10"><b>10</b></span>
+    <span style="--i:11"><b>11</b></span>
+    <span style="--i:12"><b>12</b></span>
+
+    <div class="circle"  id="sc"
+    style="--clr:#04fc43;"><i></i></div>
+    <div class="circle circle2" id="mn"
+    style="--clr:#fee800;"><i></i></div>
+    <div class="circle circle3" id="hr"
+    style="--clr:#ff2972;"><i></i></div>
+</div>
+
+
+
+
+<script>
+  let hr = document.getElementById('hr');
+  let mn = document.getElementById('mn');
+  let sc = document.getElementById('sc');
+
+  setInterval(() => {
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * 6;
+    let ss = day.getSeconds() * 6;
+
+    hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
+  }, 1000);
+</script>
+
+
+
+
+
+  <div class="timer-container" >   
+      <label for="input-days">Tage:</label>
+          <input type="number" class="nr" id="input-days" placeholder="tage" min="0">
+        <label for="input-stunden">Stunden:</label>
+          <input type="number" class="nr" id="input-hours"placeholder="stunden" min="0" max="23">
+        <label for="input-minuten">Minuten:</label>
+          <input type="number" class="nr" id="input-minutes" placeholder ="minuten" min="0" max="59">
+        <label for="input-secunden">Sekunden:</label>
+          <input type="number" class="nr" id="input-seconds" placeholder="sekunden" min="0" max="59">
+    </div>
+      
+        
+     <div class="buttons">
+        <button id="startButton" class="startButton">Start</button>
+        <button id="stopButton" class="stop">Stop</button>
+        <button id="resetButton" class="restart">Neustart</button>
+     </div>
+
+     
+    <audio id="timerSound">
+      <source src="Furz-kurz.mp3" type="audio/mpeg">
+    </audio>
+        <script src="timer.js"></script>
+  
     
 </body>
 </html>
