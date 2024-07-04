@@ -10,6 +10,11 @@ header{
     padding-right: 350px;
 }
 
+.a {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Knöpfe */
 .buttons {
