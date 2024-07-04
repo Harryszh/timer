@@ -1,9 +1,24 @@
+header{
+    background-color: chartreuse;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+
 /* Knöpfe */
 .buttons {
     display: flex;
     justify-content: center;
     margin-top: 100px;
     gap: 40px;
+    border-radius: 12px;
+    
 }
 
 button {
@@ -128,8 +143,8 @@ button {
 } 
  .circle i{
     position: absolute;
-    width: 6px;
-    height: 50%;
+    width: 4px;
+    height: 100%;
     background-color: var(--clr);
     opacity: 0.75;
     transform-origin: top;
@@ -164,6 +179,16 @@ button {
     background-color: var(--clr);
     box-shadow: 0 0 20px var(--clr),
     0 0 60px var(--clr);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+    margin-top: 100px;
+    color:black;
+   
+
 }
 
         

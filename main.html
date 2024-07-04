@@ -10,11 +10,23 @@
  
 
 </head>
-<body style="background-color: yellow;">
+<body style="background-color: yellow; margin: 0px;">
   
- 
+  <header>
+      <div class="menubar">
+          <div>
+            <p>Home</p>
+          </div>
+          <div>
+            <p>Links</p>
+          </div>
+      </div>
+      </header>
+
+<main>
+  
   <div class="bild-rolex" style="background-color: yellow;">
-    <img src="Rolex.png" alt="Ein Beispielbild" width="200" height="300" >
+      <img src="Rolex.png" alt="Ein Beispielbild" width="200" height="300" >
   </div>
 
   <div class="clock">
@@ -31,32 +43,32 @@
     <span style="--i:11"><b>11</b></span>
     <span style="--i:12"><b>12</b></span>
 
-    <div class="circle"  id="sc"
-    style="--clr:#04fc43;"><i></i></div>
+  <div class="circle"  id="sc"
+      style="--clr:#04fc43;"><i></i></div>
     <div class="circle circle2" id="mn"
-    style="--clr:#fee800;"><i></i></div>
+      style="--clr:#fee800;"><i></i></div>
     <div class="circle circle3" id="hr"
-    style="--clr:#ff2972;"><i></i></div>
-</div>
+      style="--clr:#ff2972;"><i></i></div>
+  </div>
 
 
 
 
 <script>
-  let hr = document.getElementById('hr');
-  let mn = document.getElementById('mn');
-  let sc = document.getElementById('sc');
+    let hr = document.getElementById('hr');
+    let mn = document.getElementById('mn');
+    let sc = document.getElementById('sc');
 
-  setInterval(() => {
-    let day = new Date();
-    let hh = day.getHours() * 30;
-    let mm = day.getMinutes() * 6;
-    let ss = day.getSeconds() * 6;
+    setInterval(() => {
+      let day = new Date();
+      let hh = day.getHours() * 30;
+      let mm = day.getMinutes() * 6;
+      let ss = day.getSeconds() * 6;
 
-    hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
-    mn.style.transform = `rotateZ(${mm}deg)`;
-    sc.style.transform = `rotateZ(${ss}deg)`;
-  }, 1000);
+      hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
+      mn.style.transform = `rotateZ(${mm}deg)`;
+      sc.style.transform = `rotateZ(${ss}deg)`;
+    }, 1000);
 </script>
 
 
@@ -81,7 +93,12 @@
         <button id="resetButton" class="restart">Neustart</button>
      </div>
 
-     
+</main>    
+    
+  <div class="footer">
+    (C) 2021 Harrys Dev Ent Corp.
+  </div>
+
     <audio id="timerSound">
       <source src="Furz-kurz.mp3" type="audio/mpeg">
     </audio>
