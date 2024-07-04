@@ -57,6 +57,7 @@ button {
 .nr{
     text-align: center;
     font-size: 30px;
+    background-color: chartreuse;
     
 }
 
@@ -202,9 +203,6 @@ button {
     color:black;
     height: 36px;
     align-items: center;
-
-   
-
 }
 
         
