@@ -24,11 +24,24 @@ header{
     gap: 40px;
     border-radius: 12px;
     
+    
 }
+
+.startButton{
+    border-radius: 15px;
+}
+
+.restart {
+    border-radius: 15px;
+}
+
+.stop {
+    border-radius: 15px;
+}
+
 
 button {
     font-size: 40px;
-    
     
 }
  
@@ -67,8 +80,6 @@ button {
     margin-top: -250px;
     margin-bottom: 100px;
     position: relative; 
-    
-
 }
 
 .clock::before {
@@ -83,7 +94,6 @@ button {
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
-
 
 .clock span {
     position: absolute;
@@ -115,7 +125,6 @@ button {
     z-index: 100000 ;
 }
 
-
 .clock span {
     position: absolute;
     inset: 20px;
@@ -133,7 +142,6 @@ button {
     transform: rotate(calc(-30deg * var(--i)));
 }
 
-  
 .circle{
     position: absolute;
     width: 150px;   
@@ -192,6 +200,9 @@ button {
     background-color: chartreuse;
     margin-top: 100px;
     color:black;
+    height: 36px;
+    align-items: center;
+
    
 
 }
